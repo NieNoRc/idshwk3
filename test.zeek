@@ -24,7 +24,9 @@ local x:addr;
 	for(x in iptAg)
 	{
 		if(|iptAg[x]|>=3)
-		{print x," is a proxy";}
+		{
+		print cat(x," is a proxy");
+		}
 	}
 }
 
