@@ -17,8 +17,13 @@ local uA:string;
 			iptAg[c$id$orig_h]=x;
 		}
 	}
-	if(|iptAg[c$id$orig_h]|>=3)
+}
+event zeek_done()
+{
+local x:addr;
+	for(x in iptAg)
 	{
-	print c$id$orig_h," is a proxy";
+		print x," is a proxy";
 	}
 }
+
