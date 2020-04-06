@@ -19,6 +19,6 @@ local uA:string;
 	}
 	if(|iptAg[c$id$orig_h]|>=3)
 	{
-	print c$id$orig_h" is a proxy";
+	print c$id$orig_h," is a proxy";
 	}
 }
