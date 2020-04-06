@@ -23,7 +23,8 @@ event zeek_done()
 local x:addr;
 	for(x in iptAg)
 	{
-		print x," is a proxy";
+		if(|iptAg[x]|>=3)
+		{print x," is a proxy";}
 	}
 }
 
